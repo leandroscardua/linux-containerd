@@ -9,3 +9,4 @@ echo "${version//v}"
 wget https://github.com/containerd/nerdctl/releases/download/v${version//v}/nerdctl-full-${version//v}-linux-amd64.tar.gz
 sudo tar xvzf nerdctl-full-${version//v}-linux-amd64.tar.gz -C /usr/local
 containerd-rootless-setuptool.sh install
+containerd-rootless-setuptool.sh install-buildkit-containerd
